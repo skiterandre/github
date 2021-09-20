@@ -1,0 +1,6 @@
+
+--===================================
+-- curso git
+--===================================
+git status 	 -mostra o status da pasta atual em relacao ao git
+git add .    -adiciona todos arquivos da pasta no monitoramento git
