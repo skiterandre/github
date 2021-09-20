@@ -2,5 +2,14 @@
 --===================================
 -- curso git
 --===================================
-git status 	 -mostra o status da pasta atual em relacao ao git
-git add .    -adiciona todos arquivos da pasta no monitoramento git
+git status 	 ---mostra o status da pasta atual em relacao ao git
+git add .    ---adiciona todos arquivos da pasta no monitoramento git
+git commit -m "comentario"  ---adiciona o comentario do commit
+
+git log 				---mostra o historico de commits da branch
+git log --oneline  ---mostra historico de commits de forma resumida
+git log -p   --mostra historico de alterações de forma completa
+hashs para git log : https://devhints.io/git-log
+git log --pretty="format:%H"
+
+git config --local/--global user.name "Nome" ----salva as config local ou global.
