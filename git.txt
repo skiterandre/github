@@ -2,14 +2,34 @@
 --===================================
 -- curso git
 --===================================
+
+--Projeto e compartilhamento=======
 git status 	 ---mostra o status da pasta atual em relacao ao git
 git add .    ---adiciona todos arquivos da pasta no monitoramento git
 git commit -m "comentario"  ---adiciona o comentario do commit
+git push local master  -----manda tudo da master... para o remote de nome local, 
+git pull origin master----- pega tudo do remote origin para a master local....
 
+git clone "endereco" -- clona o projeto 
+
+--===================================
+--Logs e historicos================
 git log 				---mostra o historico de commits da branch
 git log --oneline  ---mostra historico de commits de forma resumida
 git log -p   --mostra historico de alterações de forma completa
 hashs para git log : https://devhints.io/git-log
 git log --pretty="format:%H"
 
+para ignorar o arquivo, deve criar na pasta um arquivo com nome .gitignore e dentro dele, colocar todos arquivos 
+que voce deseja que o git ignore......lembrar de add o arquivo .gitignore para o git monitorar.
+
+--===================================
+--configuracoes===================
+git remote add "nomeServidor" "caminho"  ---adiciona server remote para minha aplicacao
+git remote  ----lista o servidor
+git remote -v lista o caminho do servidor
+
+git init --bare ----adiciona um server para o compartilhamento
+
 git config --local/--global user.name "Nome" ----salva as config local ou global.
+
