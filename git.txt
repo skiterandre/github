@@ -13,18 +13,6 @@ git pull origin master----- pega tudo do remote origin para a master local....
 git clone "endereco" -- clona o projeto 
 
 --===================================
---merge e rebase===================
-git merge [branch origin do merge] --gera um commit de merge e joga o historico dos commits anteriores fora
-git rebase [branch origin do rebase] --rebaseia a branch origin do rebase, matendo os commits anteriores
-
---apos executar um rebase com conflito, resolva os conflitos e digite o commando
-git rebase --continue
-
-git reset head [arquivo] -- volta o estado de add do arquivo
-git checkout -- [arquivo]   --traz de volta o arquivo do repositorio
-
-
---===================================
 --Logs e historicos================
 git log 				---mostra o historico de commits da branch
 git log --oneline  ---mostra historico de commits de forma resumida
@@ -44,6 +32,4 @@ git remote -v lista o caminho do servidor
 git init --bare ----adiciona um server para o compartilhamento
 
 git config --local/--global user.name "Nome" ----salva as config local ou global.
-
-
 
